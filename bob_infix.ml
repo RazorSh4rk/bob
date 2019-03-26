@@ -22,3 +22,10 @@ Same as a List.contains would be
 let (>?) _n _ls =
 	List.exists (fun el -> el = _n) _ls
 ;;
+
+(*
+Integer exponentiation
+*)
+let (>**) _l _r = 
+	(float_of_int _l) ** (float_of_int _r) |> int_of_float
+;;
